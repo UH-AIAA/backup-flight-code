@@ -1,0 +1,12 @@
+
+{
+    "name": "Quaternion",
+    "version": "1.0.0",
+    "author": "Your Name",
+    "maintainer": "Your Email",
+    "sentence": "A brief description of your library.",
+    "paragraph": "A longer description of your library.",
+    "category": "Signal Processing",
+    "url": "https://yourlibraryhomepage.com",
+    "architectures": "*"
+}

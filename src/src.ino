@@ -7,11 +7,15 @@
  */
 
 // Include necessary libraries
+#include <Arduino.h>
 #include <Wire.h>          // I2C communication
 #include <SPI.h>           // SPI communication
 #include <SD.h>            // SD card operations
 
-#include <Orientation.h>   // Custom orientation library
+// #include <Orientation.h>   // Custom orientation library
+
+// bootleg orlando library lol
+#include <Quaternion.h>
 
 // Adafruit sensor libraries
 #include <Adafruit_Sensor.h>
