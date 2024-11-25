@@ -25,6 +25,8 @@
 #include <Adafruit_BMP3XX.h>
 #include <Adafruit_LSM6DSO32.h>
 
+#define SERIALDEBUG
+
 // Timing variables
 int32_t mstime, previoustime, deltatime;
 
@@ -401,7 +403,7 @@ void setup()
   BNO.setMode(OPERATION_MODE_NDOF);                     // Set to NDOF (Nine Degrees of Freedom) fusion mode
 
   // GPS Initialization and Configuration
-  GPS.begin(115200);  // Initialize GPS at 115200 baud
+  GPS.begin(9600);  // Initialize GPS at 115200 baud
   GPS.sendCommand(PMTK_SET_NMEA_OUTPUT_ALLDATA);  // Request all available NMEA data
   GPS.sendCommand(PMTK_SET_NMEA_UPDATE_10HZ);     // Set update rate to 10 Hz
 
