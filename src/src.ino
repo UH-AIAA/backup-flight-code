@@ -16,6 +16,7 @@
 
 // bootleg orlando library lol
 #include <Quaternion.h>
+#include <Quaternion.cpp>
 
 // Adafruit sensor libraries
 #include <Adafruit_Sensor.h>
@@ -412,7 +413,7 @@ void setup()
   // Create datalogging file with a unique name
   char csvfilename[17] = "FL0.csv";
   for(uint32_t i = 0; SD.exists(csvfilename); i++){
-    sprintf(csvfilename, "FL%d.csv", i);  // Increment filename if it already exists
+    sprintf(csvfilename, "FL%lu.csv", i);  // Increment filename if it already exists
   }
 
   // Open file for writing
